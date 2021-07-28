@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/arkaadmin.css">
+    <style>
+
+    
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #0704aa;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+   
+    color: rgb(206, 209, 5);
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  .logo-image{
+width: 56px;
+height: 26px;
+border-radius: 50%;
+overflow: hidden;
+margin-top: -30px;
+}
+.vdots{
+    align-items:right;
+}
+
+.login{  
+        width: 380px;  
+        overflow: hidden;  
+        margin: top;  
+        margin: 20 0 0 50px;  
+        padding:50px; 
+        padding-top:0px;  
+        padding-bottom:0px;  
+        padding-left:15px;  
+        background: #ffffff;  
+        border-radius: 15px ;  
+        margin-top: -55%;
+        margin-right: 35%; 
+        float: right;
+}  
+h1{
+ text-align : center;
+}
+b{
+color:#0000FF;
+}
+#Uname{  
+    width: 400px;  
+    height: 30px; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+    border-radius: 5px ;  
+    border-color: #0000FF;
+    }  
+#Pass{  
+    width: 400px;  
+    height: 30px; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+    border-radius: 5px ;  
+    border-color: #0000FF;
+    }
+::placeholder {
+  color:#0000FF;
+font-size: 10px;
+}
+span{
+color:#0000FF;
+}
+#check{
+background-color:#0000FF;
+}
+#log{  
+    width: 400px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: #ffffff; 
+   background-color:#00008B; 
+  }
+#log1{  
+    width: 400px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: #00008B; 
+    border: 2px solid #00008B; 
+}
+.blogo{
+    width: fit-content;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <img src="images/productheader.png" alt="">
+
+    </header>
+    <hr>
+    <img src=
+    "images/Vector (5).png" 
+             alt="" class="rightlogo"
+             align="right">
+             
+             <div class="form">
+      
+                <ul class="tab-group">
+                  <li class="tab active"><a href="#signup">Sign Up</a></li>
+                  <li class="tab"><a href="#login">Log In</a></li>
+                </ul>
+                
+                <div class="tab-content">
+                  <div id="signup">   
+                    <h1>Sign Up for Free</h1>
+                    
+                    <form action="/" method="post">
+                    
+                    <div class="top-row">
+                      <div class="field-wrap">
+                        <label>
+                          First Name<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                      </div>
+                  
+                      <div class="field-wrap">
+                        <label>
+                          Last Name<span class="req">*</span>
+                        </label>
+                        <input type="text"required autocomplete="off"/>
+                      </div>
+                    </div>
+          
+                    <div class="field-wrap">
+                      <label>
+                        Email Address<span class="req">*</span>
+                      </label>
+                      <input type="email"required autocomplete="off"/>
+                    </div>
+                    
+                    <div class="field-wrap">
+                      <label>
+                        Set A Password<span class="req">*</span>
+                      </label>
+                      <input type="password"required autocomplete="off"/>
+                    </div>
+                    
+                    <button type="submit" class="button button-block"/>Get Started</button>
+                    
+                    </form>
+          
+                  </div
+<form action="">
+    <div class="login">
+      
+       <br>
+        <form id="login" method="get" action="login.php">    
+                <label><b>First Name   
+                 
+                </label>    
+                <input type="text" name="Uname" id="Uname" placeholder="">    
+                <br><br>    
+                <label><b>Last Name     
+                </b>  <br>  
+                </label>    
+                <input type="Password" name="Pass" id="Pass" placeholder="">    
+                
+                <br><br>    
+                <label><b>User ID     
+                </b>  <br>  
+                </label>   
+               
+                <input type="Password" name="Pass" id="Pass" placeholder=""> 
+                 
+                <br><br>   <br> 
+                <label><b>Company    
+                </b>    <br>  
+              
+                </label>    
+                <input type="Password" name="Pass" id="Pass" placeholder="">   
+               <br><br>
+                <label><b>Registered Email ID    
+                </b>    <br>  
+              
+                </label>    
+                <input type="Password" name="Pass" id="Pass" placeholder=""> 
+            </form>     
+        </div>    
+</form>
+   
+    <div class="sidebar">
+        <a  href="">Home</a>
+        <a href="">Interface</a>
+        <a class="active" href="">Administration</a>
+        <a href="">User Management</a>
+        <a href="">Adaption detail</a>
+        <a href="">Cost Management</a>
+        <a href="">Document Management</a>
+        <a href="">Analytics</a>
+        <hr>
+        <a href="">Create Issue</a>
+        <a href="">Find Help</a>
+        <a href="">Privacy Policy</a>
+        <footer>
+            <img src="images/Group 124.png" alt="" class="blogo">
+        </footer>
+      </div>
+
+      
+</body>
+</html>
